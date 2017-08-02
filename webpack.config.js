@@ -100,7 +100,7 @@ const javascript = {
 const images = {
   test: /\.(jpe?g|svg|png|gif)$/i,
   use: [
-    'file-loader?name=assets/img/[name].[ext]'
+    'file-loader?name=public/assets/img/[name].[ext]'
   ]
 }
 
@@ -128,6 +128,9 @@ const webpackConfig = {
   },
   module: {
     rules: [javascript, styles, images, html]
+  },
+  resolve: {
+    modules: [PATHS.src, 'node_modules'],
   },
   devServer: devServerOptions,
   plugins: pluginsList

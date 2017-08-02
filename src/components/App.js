@@ -7,7 +7,7 @@ class App extends React.Component {
     return(
       <div>
         <h1>Hello { this.props.name }!</h1>
-        <img src='/assets/img/logo--react.svg' alt='Logo React'/>
+        <img src='public/assets/img/logo--react.svg' alt='Logo React' height='80px' width='80px'/>
       </div>
     )
   }
