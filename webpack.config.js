@@ -11,13 +11,13 @@ const isProd = process.env.NODE_ENV === 'production';
 
 //////////////////////// FILEPATH ///////////////////////
 /////////////////////////////////////////////////////////
-
 const buildFolder = 'dist';
+const sourceFolder = 'src';
 const PATHS = {
-  src       : path.resolve(__dirname, 'src'),
   build     : path.resolve(__dirname, buildFolder),
-  appJS     : path.resolve(__dirname, 'src/app.js'),
-  indexHTML : path.resolve(__dirname, 'src/index.html')
+  src       : path.resolve(__dirname, sourceFolder),
+  appJS     : path.resolve(__dirname, `${sourceFolder}/app.js`),
+  indexHTML : path.resolve(__dirname, `${sourceFolder}/index.html`)
 }
 
 
